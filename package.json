@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "pm2 start index.js --watch",
+    "end": "pm2 stop all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "nimble9",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongoose": "^5.11.13"
   }
